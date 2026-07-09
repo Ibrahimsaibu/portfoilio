@@ -10,31 +10,48 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
-      company: "Peerless SGC (Sterling Financial Holdings)",
-      position: "Senior Frontend (Contract)",
-      period: "Jan 2024 - Dec 2024",
+      company: "Law Pavillion",
+      position: "Senior Frontend Developer / Team Lead",
+      period: "Aug 2025 - Present",
       responsibilities: [
-        "Contributed significantly to the success of SeaBaas, an indigenous core banking app that saved Sterling Bank over $10millions in licensing fees.",
-        "Led development teams to deliver multiple critical modules integrated into SeaBaas a multi-tenancy app that is used by financial institutions to run effective services for their millions of customers.",
-        "Planned and executed agile sprints, fostering seamless communication across stakeholders and ensured task are delivered on schedule.",
-        "Built the End of Activities interface to monitor, in real-time, the reporting of daily, monthly and yearly activities across all branches.",
-        "Ensure quality assurance is passed by running end to end (E2E) testing on seabass at every deployment environment before handover to client.",
-        "Planned and executed agile sprints, fostering seamless communication across stakeholders ensuring functionality and scalability.",
+        "Led the frontend engineering team to architect and deliver high-performance AI-powered legal solutions, including case management systems and AI assistant integrations.",
+        "Built CourtAI, an AI-embedded Case Manager System for Judges, integrating document summarization and daily schedule planning to streamline judicial workflows.",
+        "Currently architecting an AI-powered Case Manager for Lawyers to automate law firm operations, implementing strict Role-Based Access Control (RBAC) and process management systems.",
+        "Integrated a GPT-based Q&A assistant with streaming responses, enhancing user engagement through natural language legal queries.",
+        "Implemented client-side OCR document extraction using Tesseract.js, improving legal data processing efficiency and text search accuracy.",
+        "Architected LP Elite, an integration suite enabling seamless interoperability between the AI application and other legacy tools subscribed to by users.",
+        "Co-created and led the team to complete the ACJMC platform, which was successfully launched in Nov 2025 to digitize criminal justice administration in Nigeria.",
+        "Mentored junior frontend developers and introduced comprehensive code review practices to ensure alignment with architectural standards and high code quality.",
+        "Appointed Frontend Team Lead following organizational transition, taking full ownership of frontend engineering direction."
+      ],
+    },
+    {
+      company: "Peerless SGC (Sterling Financial Holdings)",
+      position: "Senior Frontend Engineer (Contract)",
+      period: "Jan 2024 - Jul 2025",
+      responsibilities: [
+        "Engineered critical front-end modules for SeaBaas, a multi-tenant core banking platform, saving Sterling Bank over $10 million in annual software licensing fees.",
+        "Contracted to architect and build Mizan, a separate core banking application engineered in strict compliance with non-interest (Islamic/Sharia) banking regulations.",
+        "Implemented Storybook for component-driven development and visual regression testing, boosting UI consistency and accelerating design-to-code handoffs.",
+        "Developed accessible and performant interfaces using React, TypeScript, Redux, and React Query, managing real-time data sync for millions of retail banking accounts.",
+        "Optimized application loading performance by 35% using code-splitting, lazy loading, and fine-grained memoization strategies.",
+        "Built real-time analytics dashboards adhering to strict WCAG 2.1 AA and ARIA accessibility standards for inclusive web access.",
+        "Established a robust testing strategy using Cypress for E2E tests and Jest/React Testing Library for unit tests, integrating with AWS-based CI/CD pipelines to guarantee software quality.",
+        "Collaborated in Agile sprints, translating product specifications into high-quality front-end features."
       ],
     },
     {
       company: "Iverify (Rentcheck)",
       position: "Tech Lead",
-      period: "Jun 2023 – Dec 2024",
+      period: "Jun 2023 - Dec 2024",
       responsibilities: [
-        "Optimized cloud service costs from $2000 to $200 per month while enhancing the app's performance and capabilities.",
-        "Served as the administrator of the app and its infrastructures, ensuring smooth operations and reliability and scalability.",
-        "Led the frontend team that built and maintained the platforms iverify.ng and app.iverify.ng, a robust identity verification system.",
-        "Developed Kpali.ng, a certificate and document verification app with a USD-based revenue model, to drive business cash flow.",
-        "Attended to all technical issues and served as the primary point of communication for technical concerns at Iverify.",
-        "Built an in-house analytics system that connects to all Rentcheck services for strategic planning and growth.",
-        "Developed mobile applications connecting thousands of agents to the platform, expanding usability and accessibility.",
-        "Represented the company at technical forums, showcasing innovations, and fostering partnerships.",
+        "Initially contracted as a Freelance Frontend Developer to design and engineer the core platform from scratch; subsequently hired full-time to lead the engineering team and scale all digital products.",
+        "Reduced cloud infrastructure costs by 90% (from $2,000 to $200/month) through container optimization, resource rightsizing, and efficient asset delivery.",
+        "Headed the frontend team in building and scaling iverify.ng and app.iverify.ng, a multi-national identity verification system spanning Nigeria, Ghana, South Africa, and Uganda.",
+        "Engineered Kpali.ng, a document authentication SaaS platform with a USD-based billing model, driving cross-border business revenue.",
+        "Designed and developed secure mobile experiences using React Native, connecting over 1,000 field agents for real-time KYC validation.",
+        "Worked closely with Product Managers, Designers, and Backend Engineers to translate complex user requirements into clean, scalable front-end components.",
+        "Built an in-house analytics system that connects to all Rentcheck services to gather and organize data for strategic planning and growth."
       ],
     },
     {
@@ -42,10 +59,11 @@ export default function ExperienceSection() {
       position: "Frontend / Product Lead",
       period: "Aug 2021 - May 2023",
       responsibilities: [
-        "Built critical design systems and reusable components that is used to develop viajio.com and other internal apps faster.",
-        "Led the frontend team that build Viajio.com platform that brings together the fragmented tours and experience space by building a robust B2B platform.",
-        "Collaborated with leadership to align product vision with business goals which makes delivering of custom feature fast and effective.",
-        "Delivered a cohesive, high-quality user experience that improved client and user satisfaction.",
+        "Built critical design systems and reusable component libraries, accelerating development speed for viajio.com and other internal applications.",
+        "Led the frontend team to build Viajio.com, a B2B platform consolidating fragmented tours and experience spaces into a robust, high-performance portal.",
+        "Collaborated with leadership to align product vision with business goals, enabling rapid and effective custom feature delivery.",
+        "Introduced visual regression testing, lazy loading, and SSR with Next.js, optimizing performance and SEO.",
+        "Built real-time GraphQL-integrated dashboards with rapid data synchronization and interactive filtering."
       ],
     },
     {
@@ -55,7 +73,7 @@ export default function ExperienceSection() {
       responsibilities: [
         "Developed crowdfunding solutions for real estate and charity sectors, addressing usability challenges.",
         "Created mockups and functional requirements to align deliverables with stakeholder expectations.",
-        "Delivered scalable, user-friendly interfaces that enhanced team productivity.",
+        "Delivered scalable, user-friendly interfaces that enhanced team productivity."
       ],
     },
   ]

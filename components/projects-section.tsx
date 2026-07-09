@@ -15,18 +15,72 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      title: "HelpDeskHQ",
+      description:
+        "A multi-tenant customer success platform enabling companies to manage, track, and resolve customer requests, complaints, and feedback with interactive ticket dashboards.",
+      image: "",
+      link: "https://helpdesk-fe-lemon.vercel.app",
+      github: "",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "SaaS", "Multi-tenant", "Customer Success"],
+    },
+    {
+      title: "Law Pavilion AI",
+      description:
+        "An AI-powered legal assistant featuring a GPT-based Q&A system, streaming responses, and Tesseract.js OCR, delivered in a record 3 weeks as Frontend Lead.",
+      image: "https://res.cloudinary.com/magnaibra/image/upload/v1742309787/olaide-design_wv3pd0.png", // fallback or placeholder
+      link: "https://lawpavilion.ai/",
+      github: "",
+      tags: ["React", "TypeScript", "Vite", "Generative AI", "OCR", "Tesseract.js"],
+    },
+    {
+      title: "CourtAI (Judges' Case Manager)",
+      description:
+        "An AI-embedded case management system built for judges to streamline daily judicial activities, featuring document summarization, daily schedule planning, and AI assistants.",
+      image: "",
+      link: "https://court-ai.lawpavilion.com/login",
+      github: "",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Generative AI", "Legal Tech", "Dashboard"],
+    },
+    {
+      title: "Lawfirm AI Automation",
+      description:
+        "A lawyers' case manager platform automating law firm operations with embedded AI, strict role-based access control (RBAC), and process management (In Development).",
+      image: "",
+      link: "#",
+      github: "",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Generative AI", "RBAC", "SaaS"],
+    },
+    {
+      title: "ACJMC (Criminal Justice Portal)",
+      description:
+        "A digitized case-tracking platform for the Administration of Criminal Justice Monitoring Committee, completed and successfully launched in November 2025.",
+      image: "",
+      link: "https://acjmc.gov.ng/",
+      github: "",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "RESTful APIs", "Dashboard"],
+    },
+    {
       title: "SeaBaas",
       description:
         "Africa's first indigenous core banking app, optimized for scalability and seamless operations. Saved Sterling Bank over $10 million in licensing fees.",
       image: "https://res.cloudinary.com/magnaibra/image/upload/v1742311059/seabaas_ynnriq.png",
       link: "https://sterling.ng/seabaas/",
       github: "",
-      tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Core-Banking", "Fintech", ".NET"],
+      tags: ["React", "TypeScript", "Redux", "React Query", "Fintech", "Storybook"],
+    },
+    {
+      title: "Mizan",
+      description:
+        "A separate core banking application designed and built for Peerless SGC, engineered in strict compliance with non-interest (Islamic/Sharia) banking law.",
+      image: "",
+      link: "https://mizan.seabaas.co",
+      github: "",
+      tags: ["React", "TypeScript", "Redux Toolkit", "React Query", "Fintech", "Islamic-Banking"],
     },
     {
       title: "Iverify.ng",
       description:
-        "Robust identity verification system for authenticating government-issued IDs and phone numbers across Nigeria, Ghana, South Africa, and Uganda.",
+        "Identity verification platform spanning 4 countries. Designed the core system initially as a freelancer, and later scaled it as Tech Lead.",
       image: "https://res.cloudinary.com/magnaibra/image/upload/v1742310319/iverify-hero_xrfxi8.png",
       link: "https://iverify.ng",
       github: "",
@@ -35,11 +89,11 @@ export default function ProjectsSection() {
     {
       title: "Kpali.ng",
       description:
-        "Certificate and document authentication platform with a USD-based revenue model to drive business cash flow.",
+        "A certificate and document verification SaaS platform with a USD-based revenue model, enabling fast digital verification.",
       image: "https://res.cloudinary.com/magnaibra/image/upload/v1742310888/kpali-hero_upepmf.png",
       link: "https://kpali.ng",
       github: "",
-      tags: ["React", "JavaScript", "Express", "MySQL", "Authentication"],
+      tags: ["Next.js", "TypeScript", "React Query", "SaaS", "Authentication"],
     },
     {
       title: "MyTravelExplorer",
@@ -48,7 +102,7 @@ export default function ProjectsSection() {
       image: "https://res.cloudinary.com/magnaibra/image/upload/v1742309804/mytravelexplorer_bu0tll.png",
       link: "https://mytravelexplorer.com",
       github: "",
-      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Travel", "Flights", "Hotel"],
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Travel"],
     },
     {
       title: "Eazi.rent",
@@ -60,12 +114,12 @@ export default function ProjectsSection() {
       tags: ["React Native", "JavaScript", "Node.js", "MongoDB", "Real Estate"],
     },
     {
-      title: "Olaide.design",
+      title: "Her.global",
       description: "Landing page for women's beauty products with integrated e-commerce functionality and analytics.",
       image: "https://res.cloudinary.com/magnaibra/image/upload/v1742309787/olaide-design_wv3pd0.png",
-      link: "https://olaide.design",
+      link: "#",
       github: "",
-      tags: ["HTML", "CSS", "JavaScript", "Portfolio"],
+      tags: ["HTML", "CSS", "JavaScript", "E-commerce"],
     },
   ]
 

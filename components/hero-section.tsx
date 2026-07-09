@@ -131,7 +131,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-purple-500/40 rounded-full blur-3xl opacity-30" />
               <img
                 ref={profileRef}
-                src="https://res.cloudinary.com/magnaibra/image/upload/v1742308298/1zxx_svglar.jpg"
+                src="/ibrahim-hero.png"
                 alt="Ibrahim Saibu"
                 className="relative z-10 rounded-full border-4 border-background shadow-xl h-64 w-64 md:h-80 md:w-80 object-cover"
               />
