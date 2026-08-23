@@ -8,7 +8,7 @@ export default function Footer() {
     { icon: <Github className="h-5 w-5" />, href: "https://github.com/Ibrahimsaibu", label: "GitHub" },
     { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/ibrahim-saibu", label: "LinkedIn" },
     { icon: <Twitter className="h-5 w-5" />, href: "https://x.com/SaibuIbrahim", label: "Twitter" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:ibrahimsaibu2010@gmail.com", label: "Email" },
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:info@ibrahimsaibu.dev", label: "Email" },
   ]
 
   const pageLinks = [
@@ -68,7 +68,16 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
             <ul className="space-y-2 text-foreground/70">
               <li>Lagos, Nigeria</li>
-              <li>ibrahimsaibu2010@gmail.com</li>
+              <li>
+                <a href="mailto:info@ibrahimsaibu.dev" className="hover:text-primary transition-colors">
+                  info@ibrahimsaibu.dev
+                </a>
+              </li>
+              <li className="text-sm text-foreground/60">
+                <a href="mailto:ibrahimsaibu2010@gmail.com" className="hover:text-primary transition-colors">
+                  ibrahimsaibu2010@gmail.com (Alt)
+                </a>
+              </li>
               <li>+2347010139295</li>
             </ul>
           </div>

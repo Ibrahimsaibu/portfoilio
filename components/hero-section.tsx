@@ -103,21 +103,21 @@ export default function HeroSection() {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="flex space-x-5 mt-8"
             >
-              <Link href="https://www.linkedin.com/in/ibrahim-saibu" target="_blank" aria-label="LinkedIn Profile">
-                <Button variant="ghost" size="icon" className="rounded-full">
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="https://www.linkedin.com/in/ibrahim-saibu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                   <Linkedin className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="https://github.com/Ibrahimsaibu" target="_blank" aria-label="GitHub Profile">
-                <Button variant="ghost" size="icon" className="rounded-full">
+                </a>
+              </Button>
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="https://github.com/Ibrahimsaibu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                   <Github className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="mailto:ibrahimsaibu2010@gmail.com" aria-label="Email">
-                <Button variant="ghost" size="icon" className="rounded-full">
+                </a>
+              </Button>
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="mailto:info@ibrahimsaibu.dev" aria-label="Email">
                   <Mail className="h-5 w-5" />
-                </Button>
-              </Link>
+                </a>
+              </Button>
             </motion.div>
           </motion.div>
 

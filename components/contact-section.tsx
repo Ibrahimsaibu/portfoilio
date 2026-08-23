@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
-import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Loader2, Github, Linkedin } from "lucide-react"
 
 export default function ContactSection() {
   const ref = useRef<HTMLDivElement>(null)
@@ -34,12 +34,22 @@ export default function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to send message")
+      }
+
       toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Message sent successfully!",
+        description: "Thanks for reaching out. I'll get back to you soon on info@ibrahimsaibu.dev.",
       })
       setFormData({
         name: "",
@@ -47,15 +57,41 @@ export default function ContactSection() {
         subject: "",
         message: "",
       })
-    }, 1500)
+    } catch (err: any) {
+      toast({
+        variant: "destructive",
+        title: "Error sending message",
+        description: err.message || "Something went wrong. Please try again or email me directly.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
-      title: "Email",
+      title: "Primary Email",
+      value: "info@ibrahimsaibu.dev",
+      link: "mailto:info@ibrahimsaibu.dev",
+    },
+    {
+      icon: <Mail className="h-5 w-5 text-primary" />,
+      title: "Secondary Email",
       value: "ibrahimsaibu2010@gmail.com",
       link: "mailto:ibrahimsaibu2010@gmail.com",
+    },
+    {
+      icon: <Linkedin className="h-5 w-5 text-primary" />,
+      title: "LinkedIn",
+      value: "linkedin.com/in/ibrahim-saibu",
+      link: "https://www.linkedin.com/in/ibrahim-saibu",
+    },
+    {
+      icon: <Github className="h-5 w-5 text-primary" />,
+      title: "GitHub",
+      value: "github.com/Ibrahimsaibu",
+      link: "https://github.com/Ibrahimsaibu",
     },
     {
       icon: <Phone className="h-5 w-5 text-primary" />,

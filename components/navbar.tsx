@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTheme } from "next-themes"
-import { Moon, Sun, Menu, X } from "lucide-react"
+import { Moon, Sun, Menu, X, Github, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -52,7 +52,7 @@ export default function Navbar() {
             </motion.div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item, i) => (
               <motion.div
                 key={item.name}
@@ -65,6 +65,19 @@ export default function Navbar() {
                 </a>
               </motion.div>
             ))}
+
+            <div className="flex items-center space-x-2 border-l border-border pl-4">
+              <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
+                <a href="https://github.com/Ibrahimsaibu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                  <Github className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
+                <a href="https://www.linkedin.com/in/ibrahim-saibu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
 
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -122,6 +135,18 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
+              <div className="flex items-center space-x-3 pt-4 border-t border-border">
+                <Button variant="outline" size="sm" className="flex items-center gap-2" asChild>
+                  <a href="https://github.com/Ibrahimsaibu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <Github className="h-4 w-4" /> GitHub
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" className="flex items-center gap-2" asChild>
+                  <a href="https://www.linkedin.com/in/ibrahim-saibu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <Linkedin className="h-4 w-4" /> LinkedIn
+                  </a>
+                </Button>
+              </div>
             </div>
           </motion.div>
         )}
@@ -129,3 +154,4 @@ export default function Navbar() {
     </header>
   )
 }
+
