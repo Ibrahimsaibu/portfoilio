@@ -6,7 +6,7 @@ import { Briefcase, Calendar, ChevronRight } from "lucide-react"
 
 export default function ExperienceSection() {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" })
 
   const experiences = [
     {
@@ -109,38 +109,25 @@ export default function ExperienceSection() {
         </motion.div>
 
         <motion.div variants={container} initial="hidden" animate={isInView ? "show" : "hidden"} className="relative">
-          <div className="absolute left-12 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/30" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/30" />
 
           {experiences.map((exp, index) => (
             <motion.div key={exp.company} variants={item} className="mb-12 relative">
               <div className="flex flex-col md:flex-row items-start">
-                <div className="flex items-center md:w-1/2 md:justify-end md:pr-12 md:text-right mb-4 md:mb-0">
-                  <div className="hidden md:block">
-                    <div className="bg-background p-4 rounded-lg shadow-md inline-block">
-                      <h3 className="text-xl font-bold">{exp.company}</h3>
-                      <h4 className="text-lg font-medium text-primary">{exp.position}</h4>
-                      <div className="flex items-center justify-end mt-2 text-sm text-foreground/60">
-                        <Calendar className="h-4 w-4 mr-1" />
-                        <span>{exp.period}</span>
-                      </div>
+                <div className="flex items-center md:w-1/2 md:justify-end md:pr-12 md:text-right mb-3 md:mb-0 pl-10 md:pl-0">
+                  <div className="bg-background p-4 rounded-lg shadow-md w-full md:w-auto">
+                    <h3 className="text-xl font-bold">{exp.company}</h3>
+                    <h4 className="text-lg font-medium text-primary">{exp.position}</h4>
+                    <div className="flex items-center md:justify-end mt-2 text-sm text-foreground/60">
+                      <Calendar className="h-4 w-4 mr-1" />
+                      <span>{exp.period}</span>
                     </div>
                   </div>
 
-                  <div className="md:hidden">
-                    <div className="bg-background p-4 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold">{exp.company}</h3>
-                      <h4 className="text-lg font-medium text-primary">{exp.position}</h4>
-                      <div className="flex items-center mt-2 text-sm text-foreground/60">
-                        <Calendar className="h-4 w-4 mr-1" />
-                        <span>{exp.period}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="absolute left-12 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1.5 mt-6 md:mt-0" />
+                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1.5 mt-6 md:mt-0" />
                 </div>
 
-                <div className="pl-20 md:pl-12 md:w-1/2">
+                <div className="pl-10 md:pl-12 md:w-1/2 w-full">
                   <div className="bg-background p-4 rounded-lg shadow-md">
                     <ul className="space-y-2">
                       {exp.responsibilities.map((resp, idx) => (

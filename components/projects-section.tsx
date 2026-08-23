@@ -11,7 +11,7 @@ import Link from "next/link"
 
 export default function ProjectsSection() {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" })
 
   const projects = [
     {
